@@ -1,9 +1,8 @@
 
 import { ADD_REMINDER, CLEAR_REMINDER, REMOVE_REMINDER } from './ActionTypes'
-import uuid from 'uuid'
 
 export const addReminder = (text, date)=>{
-    return { type: ADD_REMINDER, payload: { text, date}, ID: uuid() }
+    return { type: ADD_REMINDER, payload: { text, date}, ID: Math.random() }
 }
 
 export const removeReminder = (ID)=>{
