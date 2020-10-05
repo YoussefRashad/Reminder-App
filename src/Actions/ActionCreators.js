@@ -1,6 +1,6 @@
 
 import { ADD_REMINDER, CLEAR_REMINDER, REMOVE_REMINDER } from './ActionTypes'
-import uuid from 'uuid/v4'
+import uuid from 'uuid'
 
 export const addReminder = (text, date)=>{
     return { type: ADD_REMINDER, payload: { text, date}, ID: uuid() }
